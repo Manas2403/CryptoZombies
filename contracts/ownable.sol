@@ -11,7 +11,7 @@ contract Ownable{
         address indexed previousOwner,
         address indexed newOwner
     );
-    constructor(){
+    constructor(){  //not included in the final code
         _owner=msg.sender;
         emit OwnershipTransferred(address(0),_owner);
     }

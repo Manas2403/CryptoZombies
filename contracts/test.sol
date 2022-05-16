@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 import "./ownable.sol"; //import statements to import different contracts we make
 import "./safeMath.sol";
 contract ZombieFactory is Ownable {
-   using SafeMath for uint256;
+   using SafeMath for uint256; //libraries
    using SafeMath32 for uint32;
    using SafeMath16 for uint16;
     event NewZombie(uint zombieId, string name, uint dna); //used to interact with frontend of the contract event-emit pair

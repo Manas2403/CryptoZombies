@@ -18,8 +18,6 @@ import "./test.sol";
 }
 
 contract ZombieFeeding is ZombieFactory {
-
-  //address ckAddress = 0x06012c8cf97BEaD5deAe237070F9587f8E7A266d;
   KittyInterface kittyContract ;
   modifier onlyOwnerOf(uint _zombieId){
     require(msg.sender==zombieToOwner[_zombieId]);
